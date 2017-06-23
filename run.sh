@@ -8,7 +8,7 @@ build () {
 }
 run () {
   # docker run -it -v /Users/jason/project/pe/dotfiles:/root/dotfiles --rm --name linux  workspace:v2;
-  docker run -it -v `pwd`/data:/root/data --rm --name linux  workspace:v2;
+  docker run -it -v `pwd`/data:/root/data --rm --name linux  "$IMAGE_NAME"
 }
 stop () {
   docker stop linux;
